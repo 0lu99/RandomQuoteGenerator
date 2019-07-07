@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Quote Generator</title>
+
+        <!--CSS File-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/quote.css">
+
+    </head>
+
+    <body>
+        <!--Javascript is added to the bottom of the code, if you add it to the head, it will load the javascipt script first, and if it's a large file, the user will be waiting a long time for the file to load before anything else is loaded-->
+        <div class="container">
+            <div class="row">
+                <!--12 means it will take up the entire 12 columns, it it's 4, it'll take up 4 columns, this means you'll have to make 3 div classes with col-md-4 so it takes up the whol 12 columns (4x3 =12). md means medium, xs means small-->
+                <div class="col-md-12">
+                    <h1>Random Quote Generator</h1>
+                    <h5>Just a bunch of random quotes</h5>
+                    <hr>
+                    <!-- A seperation-->
+                </div>
+            </div>
+            <div class="row">
+                <!--they'll be 4 left over, but the md-offset by 2 means there'll be two columns of blank space on the left and right, basically meaning the div is centered-->
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="quote-box">
+                        <p id="quote"></p>
+                        <p id="author"></p>
+                    </div>
+                    <!-- usually unordered lists are in bullet points going down, instead this will go from left to right without any bullet points-->
+                    <ul class="list-inline">
+                        <li><a href="#" class="btn btn-default btn-lg get-quote"><i class="fa fa-quote-left fa-fw"></i>Get Quote</a></li>
+                        <li><a href="#" class="btn btn-default btn-lg share-quote"><i class="fa fa-twitter fa-fw"></i>Tweet Quote</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer" class="container-fluid">
+                <h6>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Olu Sodeinde</h6>
+            </div>
+        </footer>
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="js/quote.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+        <script src="js/index1.js" type="text/javascript"></script>
+
+    </body>
+
+</html>
